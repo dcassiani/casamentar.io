@@ -18,7 +18,7 @@
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,9 +32,12 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row">
+<!-- start  MENU -->
+   <div class="navbar-wrapper">
+      <div class="container">
+
         <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Menu</span>
@@ -42,7 +45,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Era uma vez...</a>
+              <a class="navbar-brand" href="#">Era uma vez...</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -62,60 +65,64 @@
                 </li>
               </ul>
             </div>
+          </div>
         </nav>
-    </div>
-</div>
+<h1 class="page-header">Lista de Presentes</h1>
+      </div>
+		
+<!-- end MENU -->
 
-	
-	
-    <div class="container">
       <div class="row">
-          <h1 class="page-header">Lista de Presentes</h1>
 
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 placeholder text-center">
-              <a href="#lua" data-toggle="collapse"><img src="img/aliancas.jpg" width="200" height="200" class="img-responsive">
-              <h4>Lua de Mel</h4></a>
-              <span class="text-muted">me paga uma bebida?</span>
-				<div class="col-xs-12 collapse"role="group" id="lua">
-					<button class="btn btn-danger">
-						Drink no Caribe
-					</button>
-					<button class="btn btn-warning">
-						Jantar Romântico
-					</button>
-					<button class="btn btn-danger">
-						Passeio de Jet Ski
-					</button>
-					<button class="btn btn-warning">
-						Ofurô Romântico
-					</button>
-				</div>
+	  <div class="col-sm-12 col-md-6 placeholder text-center">
+	  <a href="#lua" data-toggle="collapse"><img src="img/aliancas.jpg" width="200" height="200" class="img-responsive">
+	  <h4>Lua de Mel</h4></a>
+	  <span class="text-muted">me paga uma bebida?</span>
+		<div class="card collapse" id="lua">
+			<div class="btn-group-vertical" role="group">
+			<button class="btn btn-danger">
+				Drink no Caribe
+				<span class="badge badge-pill badge-success">R$100</span>
+			</button>
+			<button class="btn btn-warning">
+				Jantar Romântico
+				<span class="badge badge-pill badge-success">R$200</span>
+			</button>
+			<button class="btn btn-danger">
+				Passeio de Jet Ski
+				<span class="badge badge-pill badge-success">R$400</span>
+			</button>
+			<button class="btn btn-warning">
+				Ofurô Romântico
+				<span class="badge badge-pill badge-success">R$300</span>
+			</button>
+			</div>
+		</div>
+  </div>
 
-		  </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 placeholder text-center">
-              <img src="img/home.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Casa</h4>
-              <span class="text-muted">que tal um aconchego?</span>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 placeholder text-center">
-              <img src="img/festa.jpg"" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Festa</h4>
-              <span class="text-muted">ajudando com a bagunça!</span>
-            </div>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 placeholder text-center">
+	  <img src="img/home.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+	  <h4>Casa</h4>
+	  <span class="text-muted">que tal um aconchego?</span>
+	</div>
 
 
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 placeholder text-center">
-              <img src="img/show-love.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Desejar mais!</h4>
-              <span class="text-muted">amor, felicidade, alegria...</span>
-            </div>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 placeholder text-center">
+	  <img src="img/festa.jpg"" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+	  <h4>Festa</h4>
+	  <span class="text-muted">ajudando com a bagunça!</span>
+	</div>
 
 
-        </div>
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 placeholder text-center">
+	  <img src="img/show-love.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+	  <h4>Desejar mais!</h4>
+	  <span class="text-muted">amor, felicidade, alegria...</span>
+	</div>
     </div>
+
+</div> 
+</div> 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
