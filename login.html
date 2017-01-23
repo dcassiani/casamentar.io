@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-<script type="text/javascript" src="https:////ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
 <script type="text/javascript" src="js/fairy.js" charset="UTF-8"></script>
-<head>
-<title>Facebook Login JavaScript Example</title>
-<meta charset="UTF-8">
-</head>
-<body ng-app="mainApp" ng-controller="mainControl as ctrl">
 
-<button ng-click="ctrl.confirmarConvidado()">Confirmar Presença!</button> : {{ teste }}<br/>
-
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-
-
-
-<script>
+<script type="text/javascript">
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -101,13 +86,29 @@
     });
   }
 </script>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+
+<body ng-app="casamentarApp" ng-controller="homeControl">
+
+	<button ng-click="confirmarConvidado()">Confirmar Presença!</button> : {{ teste }}<br/>
+
+	<div
+	  class="fb-like"
+	  data-share="true"
+	  data-width="450"
+	  data-show-faces="true">
+	</div>
+
+
 
 <!--
   Below we include the Login Button social plugin. This button uses
   the JavaScript SDK to present a graphical Login button that triggers
   the FB.login() function when clicked.
 -->
-
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 
