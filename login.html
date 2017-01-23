@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script type="text/javascript" src="https:////ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
+<script type="text/javascript" src="js/fairy.js" charset="UTF-8"></script>
 <head>
 <title>Facebook Login JavaScript Example</title>
 <meta charset="UTF-8">
 </head>
-<body>
+<body ng-app="mainApp" ng-controller="mainControl as ctrl">
+
+<button ng-click="ctrl.confirmarConvidado()">Confirmar Presença!</button> : {{ teste }}<br/>
 
 <div
   class="fb-like"
@@ -12,6 +17,7 @@
   data-width="450"
   data-show-faces="true">
 </div>
+
 
 
 <script>
